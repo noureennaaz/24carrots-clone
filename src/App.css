@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+
+.lusitana-regular {
+  font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lusitana-bold {
+  font-family: "Lusitana", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.cormorant-garamond-regular {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cormorant-garamond-light {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.didact-gothic-regular {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+::-webkit-scrollbar {
+    display: none;
+  
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 1px;
+  background: #8b8b8b;
+  outline: none;
+  opacity: 0.9;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slider:hover {
+  opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 5px;
+  border-radius: 25px 25px ;
+  background: #21321C;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 1px;
+  background: #04AA6D;
+  cursor: pointer;
 }
